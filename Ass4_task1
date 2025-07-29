@@ -1,0 +1,10 @@
+try:
+    with open("sample.txt", "r") as F:
+        Doc = F.readlines()
+        if not Doc:
+            print("The file is empty.")
+        else:
+            for line in Doc:
+                print(line)
+except:
+    print("file does not exist")
