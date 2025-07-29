@@ -1,0 +1,16 @@
+FILE="output.txt"
+
+with open(FILE,"w") as F:
+  data=input("Enter text to write to file:")
+  F.write(data+"\n")
+  print("Data written successfully to output.txt")
+with open (FILE,"a") as F:
+  data=input("Enter additional data to input:")
+  F.write(data+"\n")
+  print("Data added successfully")
+with open (FILE,"r") as F:
+  print("Final content of",FILE)
+  Doc=F.readlines()
+  for x in Doc:
+    print(x,end="")
+  
