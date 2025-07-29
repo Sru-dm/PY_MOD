@@ -4,7 +4,8 @@ try:
         if not Doc:
             print("The file is empty.")
         else:
-            for line in Doc:
-                print(line)
+            print("Reading file content:")
+            for line in range(len(Doc)):
+                print("Line",line+1,":",Doc[line])
 except:
-    print("file does not exist")
+    print("Error: The file 'sample.txt' does not exist.")
